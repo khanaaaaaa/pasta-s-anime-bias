@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Libre+Baskerville:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap');
 * {
     box-sizing: border-box;
 }
@@ -9,29 +8,62 @@ html {
 }
 
 body {
-    margin: auto;
+    margin: 0;
     min-height: 100vh;
-
-    background:
-        radial-background(circle at 20% 20%, rgba(90, 50, 35, 0.04) 1px, transparent 1px),
-        radial-radient(circle at 80% 70% rgba(90, 50, 35, 0.035) 1px, transparent 1px),
-        #eee7d8;
-
-    background-size: 18px 18px;
-
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: #30231f;
-
-    font-family: "DM Mono", monospace;
-
+    font-family: "Baloo 2", cursive;
     display: flex;
     justify-content: center;
-    align-items: center;
-
-    padding: 40px 20px;
-
+    align-items: flex-start;
+    padding: 30px 20px;
     overflow-x: hidden;
 }
 
+body::before {
+    content: "♡";
+    position: fixed;
+    top: 8px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #c98496;
+    font-size: 13px;
+}
+
 .site-header {
-    width: min(900px, 100%)
+    width: min(600px, 100%);
+    padding: 25px 30px;
+    text-align: center;
+    background: rgba(255, 248, 250, 0.9);
+    border: 2px solid #e5b5c1;
+    border-radius: 18px;
+}
+
+h1 {
+    margin: 0;
+    color: #a6536b;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 700;
+    line-height: 1;
+}
+
+.tagline {
+    margin: 10px auto 0;
+    color: #76545e;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.site-header::after {
+    content: "♡ ୨୧ ♡";
+    display: block;
+    margin-top: 10px;
+    color: #d4879a;
+    font-size: 15px;
+    letter-spacing: 4px;
 }
