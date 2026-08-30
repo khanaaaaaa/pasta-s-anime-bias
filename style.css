@@ -18,8 +18,8 @@ body {
     color: #30231f;
     font-family: "Baloo 2", cursive;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: column;
+    align-items: center;
     padding: 30px 20px;
     overflow-x: hidden;
 }
@@ -66,4 +66,41 @@ h1 {
     color: #d4879a;
     font-size: 15px;
     letter-spacing: 4px;
+}
+
+.characters {
+    width: min(900px, 100%);
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.character {
+    padding: 15px;
+    text-align: center;
+    background: rgba(255, 248, 250, 0.88);
+    border: 1px solid #e5b5c1;
+    border-radius: 15px;
+    color: #76545e;
+}
+
+.character img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #e5b5c1;
+}   
+
+.character .role {
+    margin: 0;
+    color: #c17b86;
+    font-size: 13px;
+}
+
+.character .rating {
+    color: #d4879a;
+    font-size: 18px;
+    letter-spacing: 3px;
 }
