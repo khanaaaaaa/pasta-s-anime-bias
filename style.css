@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Libre+Baskerville:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: auto;
+    min-height: 100vh;
+
+    background:
+        radial-background(circle at 20% 20%, rgba(90, 50, 35, 0.04) 1px, transparent 1px),
+        radial-radient(circle at 80% 70% rgba(90, 50, 35, 0.035) 1px, transparent 1px),
+        #eee7d8;
+
+    background-size: 18px 18px;
+
+    color: #30231f;
+
+    font-family: "DM Mono", monospace;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+
+    overflow-x: hidden;
+}
+
+.site-header {
+    width: min(900px, 100%)
+}
