@@ -24,39 +24,29 @@ body {
     overflow-x: hidden;
 }
 
-body::before {
-    content: "♡";
-    position: fixed;
-    top: 8px;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    color: #c98496;
-    font-size: 13px;
-}
-
 .site-header {
-    width: min(600px, 100%);
-    padding: 25px 30px;
+    width: 600px;
+    max-width: 100%;
+    margin: 25px auto 30px;
+    padding: 22px 30px;
     text-align: center;
-    background: rgba(255, 248, 250, 0.9);
-    border: 2px solid #e5b5c1;
+    background: rgba(255, 248, 250, 0.85);
+    border: 1.5px solid #e3aeba;
     border-radius: 18px;
 }
 
-h1 {
+.site-header h1 {
     margin: 0;
     color: #a6536b;
-    font-size: clamp(2.5rem, 6vw, 4rem);
-    font-weight: 700;
+    font-size: 42px;
     line-height: 1;
+    text-shadow: 2px 2px #f3ced7;
 }
 
 .tagline {
-    margin: 10px auto 0;
+    margin: 8px auto 0;
     color: #76545e;
     font-size: 15px;
-    line-height: 1.4;
 }
 
 .site-header::after {
@@ -64,25 +54,29 @@ h1 {
     display: block;
     margin-top: 10px;
     color: #d4879a;
-    font-size: 15px;
     letter-spacing: 4px;
 }
 
 .characters {
-    width: min(900px, 100%);
-    margin: 30px auto;
+    width: 900px;
+    max-width: 100%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
 .character {
-    padding: 15px;
+    padding: 12px;
     text-align: center;
-    background: rgba(255, 248, 250, 0.88);
-    border: 1px solid #e5b5c1;
-    border-radius: 15px;
-    color: #76545e;
+    background: rgba(255, 248, 250, 0.82);
+    border: 1.5px solid #e3aeba;
+    border-radius: 16px;
+    transition: 0.2s ease;
+}
+
+.character:hover {
+    transform: translateY(-4px);
 }
 
 .character img {
