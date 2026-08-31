@@ -15,11 +15,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: #30231f;
+    color: #5f424a;
     font-family: "Baloo 2", cursive;
-    display: flex;
-    justify-content: column;
-    align-items: center;
     padding: 30px 20px;
     overflow-x: hidden;
 }
@@ -38,13 +35,13 @@ body {
 .site-header h1 {
     margin: 0;
     color: #a6536b;
-    font-size: 42px;
+    font-size: 38px;
     line-height: 1;
     text-shadow: 2px 2px #f3ced7;
 }
 
 .tagline {
-    margin: 8px auto 0;
+    margin: 8px 0 0;
     color: #76545e;
     font-size: 15px;
 }
@@ -58,12 +55,12 @@ body {
 }
 
 .characters {
-    width: 900px;
-    max-width: 100%;
+    width: min(1000px, 100%);
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    align-items: start;
 }
 
 .character {
@@ -81,11 +78,17 @@ body {
 
 .character img {
     width: 100%;
-    height: 220px;
+    height: 240px;
     object-fit: cover;
-    border-radius: 10px;
-    border: 1px solid #e5b5c1;
+    border-radius: 11px;
+    object-fit: cover;
 }   
+
+.character h2 {
+    margin: 10px 0 0;
+    color: #a6536b;
+    font-size: 25px;
+}
 
 .character .role {
     margin: 0;
@@ -94,7 +97,8 @@ body {
 }
 
 .character .rating {
+    margin: 10px 5px;
     color: #d4879a;
-    font-size: 18px;
-    letter-spacing: 3px;
+    font-size: 14px;
+    line-height: 1.4;
 }
